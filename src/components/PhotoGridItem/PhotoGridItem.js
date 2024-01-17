@@ -55,6 +55,7 @@ const Tags = styled.ul`
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding: 8px 0;
 `;
 
 const Tag = styled.li`
@@ -63,11 +64,10 @@ const Tag = styled.li`
     background: var(--color-gray-300);
     font-size: 0.875rem;
     font-weight: 475;
-    line-height: 2em;
     color: var(--color-gray-800);
     
-    &:not(:first-of-type) {
-        margin-left: 8px;
+    &:not(:last-of-type) {
+        margin-right: 8px;
     }  
 `;
 
